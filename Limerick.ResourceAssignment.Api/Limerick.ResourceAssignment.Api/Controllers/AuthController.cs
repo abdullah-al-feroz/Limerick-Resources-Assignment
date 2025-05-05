@@ -2,7 +2,6 @@
 using Limerick.ResourceAssignment.Api.DTOs;
 using Limerick.ResourceAssignment.Api.Interfaces;
 using Limerick.ResourceAssignment.Api.Model;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Limerick.ResourceAssignment.Api.Controllers
@@ -36,7 +35,6 @@ namespace Limerick.ResourceAssignment.Api.Controllers
 
             await _unitOfWork.Users.AddAsync(user);
             await _unitOfWork.CompleteAsync();
-
             return Ok(new { token = _tokenService.CreateToken(user) });
         }
 

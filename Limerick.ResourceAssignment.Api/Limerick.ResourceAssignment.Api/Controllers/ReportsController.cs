@@ -1,5 +1,4 @@
 ﻿using Limerick.ResourceAssignment.Api.Interfaces;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Limerick.ResourceAssignment.Api.Controllers
@@ -28,7 +27,7 @@ namespace Limerick.ResourceAssignment.Api.Controllers
             if (from > to)
                 return BadRequest("Invalid date range");
 
-            var report = await _unitOfWork.Products.GetStockReport(from, to, name);
+            var report = await _unitOfWork.Products.GetStockReport(from, to, name="");
             return Ok(report);
         }
     }

@@ -104,7 +104,6 @@ export default function SalesPage() {
                         <TableHead>Quantity</TableHead>
                         <TableHead>Total Price</TableHead>
                         <TableHead className="text-right">Date</TableHead>
-                        {/* <TableHead className="text-right">Actions</TableHead> */}
                       </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -122,12 +121,6 @@ export default function SalesPage() {
                             <TableCell>{sale.quantitySold}</TableCell>
                             <TableCell>${sale.totalPrice.toLocaleString()}</TableCell>
                             <TableCell className="text-right">{formatDate(sale.saleDate)}</TableCell>
-                            {/* <TableCell className="text-right">
-                              <Button variant="ghost" size="sm" onClick={() => router.push(`/sales/${sale.id}`)}>
-                                <Eye className="h-4 w-4 mr-1" />
-                                View
-                              </Button>
-                            </TableCell> */}
                           </TableRow>
                         ))
                       )}

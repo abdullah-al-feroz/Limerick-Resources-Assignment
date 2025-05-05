@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom"
 import { FaArrowLeft, FaSave } from "react-icons/fa"
 
 const NewProductPage = () => {
-  debugger
   const navigate = useNavigate()
   const [formData, setFormData] = useState({
     name: "",

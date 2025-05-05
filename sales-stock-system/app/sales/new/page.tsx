@@ -106,7 +106,6 @@ export default function NewSalePage() {
     setApiError(null)
 
     try {
-      debugger
       const response = await fetch('https://localhost:7226/api/Sales', {
         method: 'POST',
         headers: {

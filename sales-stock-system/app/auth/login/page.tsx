@@ -38,11 +38,11 @@ export default function LoginPage() {
         throw new Error('Login failed - check your credentials')
       }
 
-      const { token } = await response.json()
 
+      const { token } = await response.json()
       // Save token and redirect
       localStorage.setItem("token", token)
-      router.push("/dashboard")
+      router.push("/products")
 
       toast({
         title: "Login Successful",

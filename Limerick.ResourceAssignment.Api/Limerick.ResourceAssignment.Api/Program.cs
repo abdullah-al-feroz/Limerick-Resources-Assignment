@@ -17,7 +17,6 @@ var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 var jwtKey = configuration["Jwt:Key"];
 var jwtIssuer = configuration["Jwt:Issuer"];
-
 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
 
 // Add services to the container.
@@ -27,10 +26,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// App settings config
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
 
-// Database context
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

@@ -69,7 +69,6 @@ export default function NewProductPage() {
 
     setLoading(true)
     try {
-      debugger
       const response = await fetch("https://localhost:7226/api/Products", {
         method: "POST",
         headers: {

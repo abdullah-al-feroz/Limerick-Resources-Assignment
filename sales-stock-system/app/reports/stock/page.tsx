@@ -98,17 +98,6 @@ export default function StockReportPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        {/* <div className="container flex h-14 items-center">
-          <div className="flex items-center justify-between w-full">
-            <h1 className="text-xl font-semibold">Current Stock Report</h1>
-            <div className="flex items-center gap-2">
-              <Button variant="outline" onClick={handleExport}>
-                <Download className="mr-2 h-4 w-4" />
-                Export
-              </Button>
-            </div>
-          </div>
-        </div> */}
       </header>
       <main className="flex-1 container py-6">
         <Card>
@@ -153,7 +142,7 @@ export default function StockReportPage() {
                             <ArrowUpDown className="h-4 w-4" />
                           </Button>
                         </TableHead>
-                        <TableHead>SKU</TableHead>
+                        <TableHead>SKU Code</TableHead>
                         <TableHead>
                           <Button
                             variant="ghost"

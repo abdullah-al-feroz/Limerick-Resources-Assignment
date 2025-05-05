@@ -49,7 +49,6 @@ export default function RegisterPage() {
     }
   
     try {
-      debugger
       const response = await fetch('https://localhost:7226/api/Auth/register', {
         method: 'POST',
         headers: {

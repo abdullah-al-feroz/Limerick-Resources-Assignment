@@ -113,18 +113,18 @@ const EditProductPage = () => {
     }
   }
 
-  if (initialLoading) return <div className="text-center text-white mt-5">Loading product...</div>
+  if (initialLoading) return <div className="text-center text-dark mt-5">Loading product...</div>
 
   return (
-    <div className="container mt-5 text-white">
+    <div className="container mt-5 text-dark">
       <div className="mb-4 d-flex align-items-center">
-        <button className="btn btn-outline-light me-2" onClick={() => router.back()}>
+        <button className="btn btn-light me-2" onClick={() => router.back()}>
           <FaArrowLeft className="me-1" />
         </button>
         <h2 className="mb-0">Update Product</h2>
       </div>
 
-      <div className="bg-dark p-4 rounded shadow-sm border border-secondary">
+      <div className="bg-white p-4 rounded shadow-sm border border-secondary">
         <h4 className="mb-2">Product Information</h4>
         <p className="text-secondary mb-4">Enter the details of the update product</p>
 
@@ -134,7 +134,7 @@ const EditProductPage = () => {
               <label className="form-label">Product Name <span className="text-danger">*</span></label>
               <input
                 type="text"
-                className={`form-control bg-dark text-white border-secondary ${errors.name ? "is-invalid" : ""}`}
+                className={`form-control bg-white text-dark border-secondary ${errors.name ? "is-invalid" : ""}`}
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
@@ -145,7 +145,7 @@ const EditProductPage = () => {
               <label className="form-label">SKU Code</label>
               <input
                 type="text"
-                className="form-control bg-dark text-white border-secondary"
+                className="form-control bg-white text-dark border-secondary"
                 name="sku"
                 value={formData.sku}
                 onChange={handleChange}
@@ -158,11 +158,11 @@ const EditProductPage = () => {
             <div className="col-md-6">
               <label className="form-label">Price <span className="text-danger">*</span></label>
               <div className="input-group">
-                <span className="input-group-text bg-secondary text-white border-secondary">$</span>
+                <span className="input-group-text bg-secondary text-dark border-secondary">$</span>
                 <input
                   type="number"
                   step="0.01"
-                  className={`form-control bg-dark text-white border-secondary ${errors.price ? "is-invalid" : ""}`}
+                  className={`form-control bg-white text-dark border-secondary ${errors.price ? "is-invalid" : ""}`}
                   name="price"
                   value={formData.price}
                   onChange={handleChange}
@@ -174,7 +174,7 @@ const EditProductPage = () => {
               <label className="form-label">Stock Quantity <span className="text-danger">*</span></label>
               <input
                 type="number"
-                className={`form-control bg-dark text-white border-secondary ${errors.stockQty ? "is-invalid" : ""}`}
+                className={`form-control bg-white text-dark border-secondary ${errors.stockQty ? "is-invalid" : ""}`}
                 name="stockQty"
                 value={formData.stockQty}
                 onChange={handleChange}
@@ -187,7 +187,7 @@ const EditProductPage = () => {
           <div className="mb-3">
             <label className="form-label">Description</label>
             <textarea
-              className="form-control bg-dark text-white border-secondary"
+              className="form-control bg-white text-dark border-secondary"
               rows="4"
               name="description"
               value={formData.description}
