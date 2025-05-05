@@ -1,0 +1,6 @@
+@Limerick.ResourceAssignment.Api_HostAddress = http://localhost:5159
+
+GET {{Limerick.ResourceAssignment.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

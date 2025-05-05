@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "lmer6iu9kQZPY8yCX8u6PLZ6vQalBTdPiFTBZyJsiDw=",
+  "Source": "Limerick.ResourceAssignment.Api",
+  "BasePath": "_content/Limerick.ResourceAssignment.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
